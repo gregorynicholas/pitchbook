@@ -1,0 +1,129 @@
+
+.book-next,
+.book-prev {
+  visibility:hidden;
+  width:21px;
+  height:312px;
+  /*background: url(/images/pitchbook-nav-sprites.png) no-repeat -106px 132px;*/
+}
+.book-prev {
+  background-position:-67px 132px;
+}
+.book-edge {
+  position:relative;
+  float:left;
+}
+.book-shadow {
+  position:relative;
+  height:40px;
+}
+
+.book-contents {
+	padding: 0;
+	float: left;
+}
+
+.book-spreads {
+  /*position: relative;*/
+}
+
+.book-spreads section {
+  /*display: block;*/
+}
+.book-spreads section div {
+  /*float: none;*/
+}
+.book-spreads section>div.left {
+  z-index: 20;
+}
+.book-spreads section>div.right {
+  z-index: 10;
+}
+
+
+.book-overlay {
+  position: absolute;
+  background:url(/images/pitchbook-sprites.png) no-repeat -445px 0px;
+}
+div.left .book-overlay {
+  background-position:-20px 0px;
+}
+
+
+.book-edge.left {background:url(/images/pitchbook-sprites.png) no-repeat left top;}
+.book-edge.right {background:url(/images/pitchbook-sprites.png) no-repeat right top;}
+
+.book-shadow {width:445px;}
+.book-shadow.left {background:url(/images/pitchbook-sprites.png) no-repeat 0px -550px;}
+.book-shadow.right {background:url(/images/pitchbook-sprites.png) no-repeat -445px -550px;}
+
+.book-next,
+.book-prev {
+  width:20px;
+  height:312px;
+}
+
+.book-edge {
+  width:20px;
+  height:550px;
+}
+
+
+.box {
+  width:800px;
+  height:450px;
+  margin-left:-400px;
+  position:absolute;
+  box-shadow:0px 0px 30px rgba(0,0,20, 1);
+  -moz-box-shadow:0px 0px 30px rgba(0,0,20, 1);
+  background:#000;
+}
+
+/* book controls.. */
+
+
+.pager-left,
+.pager-right {
+  cursor:pointer;
+  margin-top:200px;
+  width: 35px;
+  height: 75px;
+  float:left;
+  opacity:0.2;
+}
+.pager-right {
+  background: url(/images/pitchbook-nav-sprites.png) no-repeat -28px 0px;
+}
+.pager-right:hover { }
+
+.pager-left {
+  background: url(/images/pitchbook-nav-sprites.png) no-repeat 0px 0px;
+}
+.pager-left:hover { }
+.pager-left.disabled,
+.pager-right.disabled {
+  cursor:default;
+}
+
+.book-contents.first .pager-left:hover {
+  background: none;
+  cursor: default;
+}
+.book-contents.last .pager-right:hover {
+  background: none;
+  cursor: default;
+}
+
+/*
+  Page Numbers at the bottom of the book
+*/
+.page-no-l { width:375px;  margin-left:22px; }
+.page-no-r { width:375px; line-height:16px; }
+.page-total { width:50px; margin-left:28px; }
+.page-total span { font-weight:normal; }
+
+
+.pager-left,
+.pager-right {
+  margin-top:220px;
+}
