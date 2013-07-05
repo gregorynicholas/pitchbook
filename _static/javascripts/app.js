@@ -300,7 +300,7 @@ window.require.register("scripts/box", function(exports, require, module) {
   })();
 
   module.exports = exports;
-  
+
 });
 window.require.register("scripts/img-preloader", function(exports, require, module) {
   var exports,
@@ -363,7 +363,7 @@ window.require.register("scripts/img-preloader", function(exports, require, modu
   };
 
   module.exports = exports;
-  
+
 });
 window.require.register("scripts/pitchbook-analytics", function(exports, require, module) {
   var $d;
@@ -424,7 +424,7 @@ window.require.register("scripts/pitchbook-analytics", function(exports, require
   };
 
   pitchbook.analytics.init();
-  
+
 });
 window.require.register("scripts/pitchbook-app", function(exports, require, module) {
   var $d, $w, app, book_tpl, exports, intro_video_tpl, pitchbook, pitchbookBox, preloader;
@@ -531,7 +531,7 @@ window.require.register("scripts/pitchbook-app", function(exports, require, modu
       });
       if (!app.inited) {
         preloader.preload({
-          src: '/images/pitchbook-sprites.png',
+          src: '/pitchbook/_static/images/pitchbook-sprites.png',
           on_preload: function($img, o) {
             return console.info('done preloading #{o.src}');
           }
@@ -615,59 +615,59 @@ window.require.register("scripts/pitchbook-app", function(exports, require, modu
     spreads = [
       {
         left: {
-          url: '/images/spreads/spread_01a.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_01a.jpg'
         },
         right: {
-          url: '/images/spreads/spread_01b.png'
+          url: '/pitchbook/_static/images/spreads/spread_01b.png'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_02a.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_02a.jpg'
         },
         right: {
-          url: '/images/spreads/spread_02b.png'
+          url: '/pitchbook/_static/images/spreads/spread_02b.png'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_03a.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_03a.jpg'
         },
         right: {
-          url: '/images/spreads/spread_03b.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_03b.jpg'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_04a.png'
+          url: '/pitchbook/_static/images/spreads/spread_04a.png'
         },
         right: {
-          url: '/images/spreads/spread_04b.png'
+          url: '/pitchbook/_static/images/spreads/spread_04b.png'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_05a.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_05a.jpg'
         },
         right: {
-          url: '/images/spreads/spread_05b.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_05b.jpg'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_06a.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_06a.jpg'
         },
         right: {
-          url: '/images/spreads/spread_06b.jpg'
+          url: '/pitchbook/_static/images/spreads/spread_06b.jpg'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_07a.png'
+          url: '/pitchbook/_static/images/spreads/spread_07a.png'
         },
         right: {
-          url: '/images/spreads/spread_07b.png'
+          url: '/pitchbook/_static/images/spreads/spread_07b.png'
         }
       }, {
         left: {
-          url: '/images/spreads/spread_08a.png'
+          url: '/pitchbook/_static/images/spreads/spread_08a.png'
         },
         right: {
-          url: '/images/spreads/spread_08b.png'
+          url: '/pitchbook/_static/images/spreads/spread_08b.png'
         }
       }
     ];
@@ -722,7 +722,7 @@ window.require.register("scripts/pitchbook-app", function(exports, require, modu
   exports.app = app;
 
   module.exports = exports;
-  
+
 });
 window.require.register("scripts/pitchbook/book", function(exports, require, module) {
   var $d, NEXT, PREV, Pitchbook, Spread, SpreadContainer, exports, preloader;
@@ -1506,7 +1506,7 @@ window.require.register("scripts/pitchbook/book", function(exports, require, mod
 
     /**
      * gradient applied to the folded paper (highlights & shadows)
-    
+
        @param x1  the X coordinate of the start of the gradient
        @param x2  the X coordinate of the end of the gradient
        @param y1
@@ -1558,7 +1558,7 @@ window.require.register("scripts/pitchbook/book", function(exports, require, mod
   })();
 
   module.exports = exports;
-  
+
 });
 window.require.register("scripts/pitchbook/page", function(exports, require, module) {
   var Page, page_overlay_tpl, page_tpl;
@@ -1607,7 +1607,7 @@ window.require.register("scripts/pitchbook/page", function(exports, require, mod
     return Page;
 
   })();
-  
+
 });
 window.require.register("scripts/pitchbook/spread", function(exports, require, module) {
   var Page, Spread, spread_tpl;
@@ -1692,7 +1692,7 @@ window.require.register("scripts/pitchbook/spread", function(exports, require, m
     return Spread;
 
   })();
-  
+
 });
 window.require.register("scripts/pitchbook/spreadcontainer", function(exports, require, module) {
   var SpreadContainer, spreads_container_tpl;
@@ -1725,12 +1725,12 @@ window.require.register("scripts/pitchbook/spreadcontainer", function(exports, r
     return SpreadContainer;
 
   })();
-  
+
 });
 window.require.register("templates/book", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<div\n  data-action=\"pitchbook-spread-change\"\n  data-book=\"0\"\n  data-direction=\"-1\"\n  class=\"pager-left\"></div>\n<div class=\"left book-edge\"></div>\n<div\n  data-book-contents=\"0\"\n  class=\"book-contents\"></div>\n<div class=\"right book-edge\"></div>\n<div\n  data-action=\"pitchbook-spread-change\"\n  data-book=\"0\"\n  data-direction=\"1\"\n  class=\"pager-right\"></div>\n<div class=\"left book-shadow\"></div>\n<div class=\"right book-shadow\"></div>\n";});
@@ -1751,7 +1751,7 @@ window.require.register("templates/image", function(exports, require, module) {
 window.require.register("templates/intro-video", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<div>\n  <div class=\"box\" style=\"width:854px; height:480px;\">\n    <div class=\"btn-close\" action=\"pitchbookBox-close\"></div>\n    <iframe width=\"854\" height=\"480\" src=\"http://www.youtube.com/embed/YLxnRz9yKU8??version=3&amphl=en&amphd=1&ampfs=1&ampshowinfo=0&ampcontrols=1&amprel=0&ampautohide=1\" frameborder=\"0\" allowfullscreen></iframe>\n  </div>\n</div>\n";});
@@ -1759,7 +1759,7 @@ window.require.register("templates/intro-video", function(exports, require, modu
 window.require.register("templates/loading", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<div class=\"loading\"></div>\n";});
@@ -1784,7 +1784,7 @@ window.require.register("templates/page", function(exports, require, module) {
 window.require.register("templates/page_overlay", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<div class=\"book-overlay\"></div>\n";});
@@ -1792,7 +1792,7 @@ window.require.register("templates/page_overlay", function(exports, require, mod
 window.require.register("templates/spread", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<section></section>\n";});
@@ -1800,7 +1800,7 @@ window.require.register("templates/spread", function(exports, require, module) {
 window.require.register("templates/spreads_container", function(exports, require, module) {
   module.exports = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
     helpers = helpers || Handlebars.helpers;
-    
+
 
 
     return "\n<div class=\"book-spreads\"></div>\n";});

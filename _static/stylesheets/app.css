@@ -52,7 +52,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
   overflow:hidden;
   text-indent:-9999px;
   margin-right:8px;
-  background: url(/images/app-sprites.png) no-repeat 0 -173px;
+  background: url(/pitchbook/_static/images/app-sprites.png) no-repeat 0 -173px;
 }
 
 .book-body {
@@ -83,7 +83,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
 }
 
 .nav-btn {
-  background: url(/images/app-nav-sprites.png) no-repeat;
+  background: url(/pitchbook/_static/images/app-nav-sprites.png) no-repeat;
   height: 25px;
   width: 140px;
   margin-left: 1px;
@@ -108,7 +108,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
   height:48px;
   top:10px;
   right:10px;
-  background: url(/images/app-box-close.png) no-repeat;
+  background: url(/pitchbook/_static/images/app-box-close.png) no-repeat;
   cursor:pointer;
 }
 
@@ -143,7 +143,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
   visibility:hidden;
   width:21px;
   height:312px;
-  /*background: url(/images/pitchbook-nav-sprites.png) no-repeat -106px 132px;*/
+  /*background: url(/pitchbook/_static/images/pitchbook-nav-sprites.png) no-repeat -106px 132px;*/
 }
 .book-prev {
   background-position:-67px 132px;
@@ -182,19 +182,19 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
 
 .book-overlay {
   position: absolute;
-  background:url(/images/pitchbook-sprites.png) no-repeat -445px 0px;
+  background:url(/pitchbook/_static/images/pitchbook-sprites.png) no-repeat -445px 0px;
 }
 div.left .book-overlay {
   background-position:-20px 0px;
 }
 
 
-.book-edge.left {background:url(/images/pitchbook-sprites.png) no-repeat left top;}
-.book-edge.right {background:url(/images/pitchbook-sprites.png) no-repeat right top;}
+.book-edge.left {background:url(/pitchbook/_static/images/pitchbook-sprites.png) no-repeat left top;}
+.book-edge.right {background:url(/pitchbook/_static/images/pitchbook-sprites.png) no-repeat right top;}
 
 .book-shadow {width:445px;}
-.book-shadow.left {background:url(/images/pitchbook-sprites.png) no-repeat 0px -550px;}
-.book-shadow.right {background:url(/images/pitchbook-sprites.png) no-repeat -445px -550px;}
+.book-shadow.left {background:url(/pitchbook/_static/images/pitchbook-sprites.png) no-repeat 0px -550px;}
+.book-shadow.right {background:url(/pitchbook/_static/images/pitchbook-sprites.png) no-repeat -445px -550px;}
 
 .book-next,
 .book-prev {
@@ -231,12 +231,12 @@ div.left .book-overlay {
   opacity:0.2;
 }
 .pager-right {
-  background: url(/images/pitchbook-nav-sprites.png) no-repeat -28px 0px;
+  background: url(/pitchbook/_static/images/pitchbook-nav-sprites.png) no-repeat -28px 0px;
 }
 .pager-right:hover { }
 
 .pager-left {
-  background: url(/images/pitchbook-nav-sprites.png) no-repeat 0px 0px;
+  background: url(/pitchbook/_static/images/pitchbook-nav-sprites.png) no-repeat 0px 0px;
 }
 .pager-left:hover { }
 .pager-left.disabled,
