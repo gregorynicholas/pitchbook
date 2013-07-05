@@ -87,7 +87,7 @@ app.init = ->
 
     if not app.inited
       preloader.preload {
-        src: '/images/pitchbook-sprites.png'
+        src: '/pitchbook/_static/images/pitchbook-sprites.png'
         on_preload: ($img, o)->
           console.info 'done preloading #{o.src}'
       }
@@ -160,29 +160,29 @@ app.init_book = ->
   app.inited = true
   spreads = [
     {
-      left: {url: '/images/spreads/spread_01a.jpg'},
-      right: {url: '/images/spreads/spread_01b.png'}},
+      left: {url: '/pitchbook/_static/images/spreads/spread_01a.jpg'},
+      right: {url: '/pitchbook/_static/images/spreads/spread_01b.png'}},
     {
-      left: {url: '/images/spreads/spread_02a.jpg'},
-      right: {url: '/images/spreads/spread_02b.png'}},
+      left: {url: '/pitchbook/_static/images/spreads/spread_02a.jpg'},
+      right: {url: '/pitchbook/_static/images/spreads/spread_02b.png'}},
     {
-      left: {url: '/images/spreads/spread_03a.jpg'},
-      right: {url: '/images/spreads/spread_03b.jpg'}},
+      left: {url: '/pitchbook/_static/images/spreads/spread_03a.jpg'},
+      right: {url: '/pitchbook/_static/images/spreads/spread_03b.jpg'}},
     {
-      left: {url:'/images/spreads/spread_04a.png'},
-      right: {url:'/images/spreads/spread_04b.png'}},
+      left: {url:'/pitchbook/_static/images/spreads/spread_04a.png'},
+      right: {url:'/pitchbook/_static/images/spreads/spread_04b.png'}},
     {
-      left: {url:'/images/spreads/spread_05a.jpg'},
-      right: {url:'/images/spreads/spread_05b.jpg'}},
+      left: {url:'/pitchbook/_static/images/spreads/spread_05a.jpg'},
+      right: {url:'/pitchbook/_static/images/spreads/spread_05b.jpg'}},
     {
-      left: {url:'/images/spreads/spread_06a.jpg'},
-      right: {url:'/images/spreads/spread_06b.jpg'}},
+      left: {url:'/pitchbook/_static/images/spreads/spread_06a.jpg'},
+      right: {url:'/pitchbook/_static/images/spreads/spread_06b.jpg'}},
     {
-      left: {url:'/images/spreads/spread_07a.png'},
-      right: {url:'/images/spreads/spread_07b.png'}},
+      left: {url:'/pitchbook/_static/images/spreads/spread_07a.png'},
+      right: {url:'/pitchbook/_static/images/spreads/spread_07b.png'}},
     {
-      left: {url:'/images/spreads/spread_08a.png'},
-      right: {url:'/images/spreads/spread_08b.png'}},
+      left: {url:'/pitchbook/_static/images/spreads/spread_08a.png'},
+      right: {url:'/pitchbook/_static/images/spreads/spread_08b.png'}},
   ]
 
   $book = $('[data-book-container]')

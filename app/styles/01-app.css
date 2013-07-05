@@ -52,7 +52,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
   overflow:hidden;
   text-indent:-9999px;
   margin-right:8px;
-  background: url(/images/app-sprites.png) no-repeat 0 -173px;
+  background: url(/pitchbook/_static/images/app-sprites.png) no-repeat 0 -173px;
 }
 
 .book-body {
@@ -83,7 +83,7 @@ div,p{cursor:default}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:b
 }
 
 .nav-btn {
-  background: url(/images/app-nav-sprites.png) no-repeat;
+  background: url(/pitchbook/_static/images/app-nav-sprites.png) no-repeat;
   height: 25px;
   width: 140px;
   margin-left: 1px;

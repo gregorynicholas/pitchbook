@@ -2,103 +2,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <title>pitchbook</title>
-
     <script type="text/javascript">
 			var app = app || {
-				id: 'dev~pitchbook',
-				name: 'pitchbook app',
-				version: '0.0.1',
-				is_debug:  true
-			};
+        id: "pitchbook",
+        name: "dropt~pitchbook-app",
+        version: "0.0.1",
+        is_debug:  true
+      };
 			app.user = app.user || {};
-			app.user.id = 0;
-			app.user.is_authenticated =  false ;
-			app.user.key = '';
-			app.user.name = 'anonymous';
-			app.user.email = 'anonymous@pitchbook.com';
-			app.user.creation_date = '2013/06/18';
-			app.user.last_loggedin_date = '{{context_invalid}}';
-			app.user.userroles = [ 'anonymous' ];
+      app.user.id = 0;
+      app.user.is_authenticated =  false ;
+      app.user.name = 'anonymous';
+      app.user.email = 'anonymous@pitchbook.com';
+      app.user.creation_date = '2012/04/13';
+      app.user.userroles = [ 'anonymous' ];
 		</script>
-
     <script type="text/javascript">
-    	var _gaq = _gaq || [];
-    	_gaq.push(['_setAccount',  '' ]);
-    	_gaq.push(['_setCustomVar', 1, 'USER.SESS.IS_AUTHED',  'false' , 2]);
-    	_gaq.push(['_setCustomVar', 2, 'USER.ACCT.IS_MEMBER',  'false' , 1]);
-    	_gaq.push(['_setCustomVar', 3, 'USER.ACCT.ROLES', 'Anonymous', 1]);
-    	_gaq.push(['_setCustomVar', 4, 'USER.ACCT.CREATED.MON',  '6' , 1]);
-    	_gaq.push(['_setCustomVar', 5, 'USER.ACCT.CREATED.YR',  '2013' , 1]);
-    	_gaq.push(['_setCustomVar', 6, 'USER.ACCT.LASTLOGIN.MON',  '0' , 1]);
-    	_gaq.push(['_setCustomVar', 7, 'USER.ACCT.LASTLOGIN.YR',  '0' , 1]);
-    	_gaq.push(['_trackPageview']);
-    	_gaq.push(['_trackPageLoadTime']);
-    	(function() {
-    		try {
-    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    		} catch (ex) {
-    		}
-    	})();
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount',  'UA-xxxxxx' ]);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      (function() {
+        try {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        } catch (ex) {
+        }
+      })();
     </script>
+    <script type="text/javascript" src="/pitchbook/_static/javascripts/modernizr-2.6.1.js"></script>
+    <script type="text/javascript" src="/pitchbook/_static/javascripts/vendor.js"></script>
+    <script type="text/javascript" src="/pitchbook/_static/javascripts/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pitchbook/_static/stylesheets/app.css" media="all">
+    <link rel="shortcut icon" href="/pitchbook/_static/images/app-favicon.png" type="image/png">
 
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-    	_kmq.push(['identify', '{{context_invalid}}']);
-    	if (document.location.hostname.indexOf('pitchbook.com') > -1) {
-    		function _kms(u){
-    	    setTimeout(function(){
-    	      var s = document.createElement('script');
-            var f = document.getElementsByTagName('script')[0];
-            s.type = 'text/javascript'; s.async = true;
-    	      s.src = u; f.parentNode.insertBefore(s, f);
-    	    }, 1);
-    	  }
-    	  _kms('//i.kissmetrics.com/i.js');
-        _kms('//doug1izaerwt3.cloudfront.net/0990d7a3f3fdc5fee5bfd8d7e77326c752d7eb38.1.js');
-    	}
-    </script>
-
-    <script type="text/javascript" src="./javascripts/modernizr-2.6.1.js"></script>
-    <script type="text/javascript" src="./javascripts/vendor.js"></script>
-	  <script type="text/javascript" src="./javascripts/app.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./stylesheets/app.css" media="all">
-    <link rel="shortcut icon" href="/images/icons/favicon-16x16.png" type="image/png">
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup-image-320x460.png">
-
-    <meta content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<!--[if IE]>
-    	<meta content="no" http-equiv="imagetoolbar" />
-    	<meta content="true" name="MSSmartTagsPreventParsing" />
-    	<meta name="msvalidate.01" content="" />
-    <![endIf]-->
-		<meta charset="utf-8">
-		<meta content="max-age=0" http-equiv="cache-control">
-		<meta content="off" http-equiv="x-dns-prefetch-control">
-		<meta content="chrome=1" name="X-UA-Compatible">
-		<meta content="en-us" name="language">
-		<meta content="gregory nicholas" name="author">
-		<meta content="dropt: a launchpad for fashion collections." name="description">
-		<meta content="" name="keywords">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <meta content="gregory nicholas" name="author">
+    <meta content="pitchbook used during dropt's seed round fundraise." name="description">
+    <meta content="dropt, fundraising, seed round, pitchbook, deck, slide-deck" name="keywords">
   </head>
   <body>
-
   	<div class="nav-box">
   		<div class="nav-btn teaser selected"></div>
   		<div class="nav-btn overview"></div>
   		<div class="nav-btn contact"></div>
   	</div>
-
   	<div id="main">
   		<div class="body-container">
   		<div class="body-inner">
@@ -114,15 +66,16 @@
   		</div>
   	</div>
   	<div class="bottom">
-  		<a href="javascript:void(0);" class="default right logo"></a>
+  		<a href="javascript:void(0);" class="default right logo" title="dropt: a launchpad for fashion collections"></a>
   	</div>
-
   	<div id="pitchbookBox"><div class="pitchbookBox-content"></div></div>
   	<div id="pitchbookBox-overlay" class="pitchbookBox-overlay"></div>
     <script type="text/javascript">
       var app = require('/scripts/pitchbook-app').app;
       setTimeout(app.init, 200);
     </script>
-
+    <a href="http://github.com/gregorynicholas/pitchbook">
+      <img style="position: fixed; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
   </body>
 </html>
