@@ -1,8 +1,22 @@
 pitchbook
 =========
 
-a presentation that was developed + used during fundraising for dropt's seed
-round.
+presentation i developed, used for fundraising pitches during the seed round for my startup dro.pt (now pict.com)
+
+-----
+
+### overview + highlights
+
+* preloads & arranges static images in book like format
+* uses SVG to paint shadows and highlights during animation
+* animation speed + easing effects controlled through granular config settings
+* paging can be controlled through various event handlers
+    * keyboard shortcuts, click, timers, etc
+* javascript is neatly separated from html structure & css
+    * this allows for greater flexibility & customization
+* images load sequentially, aka strict load order of from front to back
+    * this helps to avoid long startup & initial wait times
+* performant on tablet & mobile devices
 
 -----
 
