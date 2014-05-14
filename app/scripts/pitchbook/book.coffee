@@ -191,11 +191,18 @@ exports.Pitchbook = class Pitchbook
       if _ctx.in_progress then return
       _ctx.pager_click e, dir
 
-    $d.bind "keydown.pitchbook", (e) ->
+    $d.on "click.pager-left", (e) ->
+      if _ctx.in_progress then return
+      _ctx.pager_click e, -1
+
+    $d.on "click.pager-right", (e) ->
+      if _ctx.in_progress then return
+      _ctx.pager_click e, 1
+
+    $d.on "keydown.pitchbook", (e) ->
       if _ctx.in_progress then return
       switch e.keyCode
-        # 27
-        when $.ui.keyCode.ESCAPE, $.ui.keyCode.RIGHT
+        when $.ui.keyCode.RIGHT, $.ui.keyCode.ESCAPE
           _ctx.pager_click e, 1
         when $.ui.keyCode.LEFT
           _ctx.pager_click e, -1
